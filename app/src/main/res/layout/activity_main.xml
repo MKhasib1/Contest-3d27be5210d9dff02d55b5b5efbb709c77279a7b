@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scaleType="fitXY"
+    tools:context=".MainActivity"
+    android:background="@color/sienna">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="    HackAthon"
+
+        android:paddingLeft="45dp"
+        android:textColor="@color/light_slate_gray"
+
+        android:textSize="50sp"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/beige"
+        android:textSize="50sp"
+        android:paddingLeft="140dp"
+        />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Email"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/orange"
+        android:layout_marginBottom="30dp"
+        android:importantForAutofill="no"
+        android:paddingLeft="140dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/beige"
+        android:textSize="50sp"
+
+        android:paddingLeft="100dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="120dp"
+        android:hint="Enter your password"
+        android:textColorHint="@color/orange"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape"
+        android:text="Sign Up"
+        android:textColor="@color/white" />
+
+    <com.google.android.gms.common.SignInButton
+
+        android:id="@+id/signIN"
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="130dp"
+        android:elevation="2dp"
+
+        ></com.google.android.gms.common.SignInButton>
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"></ProgressBar>
+</LinearLayout>
