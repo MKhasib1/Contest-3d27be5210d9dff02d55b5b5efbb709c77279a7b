@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WaterTracking"></activity>
+        <activity android:name=".StepTracker"></activity>
+        <activity android:name=".WaterTracking" />
         <activity android:name=".waterLeaderShip" />
         <activity android:name=".AppWindow" />
         <activity android:name=".MainActivity">

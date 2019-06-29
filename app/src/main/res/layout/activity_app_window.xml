@@ -13,7 +13,7 @@
 
 
     <Button
-        android:id="@+id/leadershipButton"
+        android:id="@+id/waterTrackingButton"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="40dp"
@@ -26,7 +26,7 @@
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/waterTrackingButton"
+        android:id="@+id/stepsCountValue"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="40dp"

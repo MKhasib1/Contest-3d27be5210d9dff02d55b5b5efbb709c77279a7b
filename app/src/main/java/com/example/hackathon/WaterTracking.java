@@ -1,8 +1,10 @@
 package com.example.hackathon;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 
 import android.widget.Button;
@@ -20,11 +22,13 @@ public class WaterTracking extends AppCompatActivity {
     private TextView first;
     private TextView second;
     private ImageView glass;
+
     public  static final String DRINKED_WATER="com.example.login.DRINKED_WATER";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_water_tracking);
+
         leadershipButton=findViewById(R.id.leadershipButton);
         drinkButton=findViewById(R.id.drinkButton);
         glassesWaterDrinked=findViewById(R.id.glassesWaterDrinked);
